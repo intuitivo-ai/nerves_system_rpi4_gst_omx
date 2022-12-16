@@ -56,7 +56,9 @@ defmodule NervesSystemRpi4GSTOMX.MixProject do
         {"TARGET_ARCH", "arm"},
         {"TARGET_CPU", "cortex_a72"},
         {"TARGET_OS", "linux"},
-        {"TARGET_ABI", "gnueabihf"}
+        {"TARGET_ABI", "gnueabihf"},
+        {"TARGET_GCC_FLAGS",
+         "-mabi=aapcs-linux -mfpu=neon-vfpv4 -marm -fstack-protector-strong -mfloat-abi=hard -mcpu=cortex-a72 -fPIE -pie -Wl,-z,now -Wl,-z,relro"}
       ],
       checksum: package_files()
     ]
