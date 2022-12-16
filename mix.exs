@@ -1,7 +1,7 @@
 defmodule NervesSystemRpi4GSTOMX.MixProject do
   use Mix.Project
 
-  @github_organization "nerves-project"
+  @github_organization "joserpintuitivo"
   @app :nerves_system_rpi4_gst_omx
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
