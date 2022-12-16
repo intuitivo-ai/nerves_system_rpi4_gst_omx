@@ -1,7 +1,7 @@
-# Raspberry Pi 4 Model B (64-bit)
+# Raspberry Pi 4 Model B GST OMX (32-bit)
 
-[![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_rpi4.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_rpi4)
-[![Hex version](https://img.shields.io/hexpm/v/nerves_system_rpi4.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi4)
+[![CircleCI](https://circleci.com/gh/nerves-project/nerves_system_rpi4_gst_omx.svg?style=svg)](https://circleci.com/gh/nerves-project/nerves_system_rpi4_gst_omx)
+[![Hex version](https://img.shields.io/hexpm/v/nerves_system_rpi4_gst_omx.svg "Hex version")](https://hex.pm/packages/nerves_system_rpi4_gst_omx)
 
 This is the base Nerves System configuration for the Raspberry Pi 4 Model B.
 
@@ -11,7 +11,7 @@ This is the base Nerves System configuration for the Raspberry Pi 4 Model B.
 
 | Feature              | Description                     |
 | -------------------- | ------------------------------- |
-| CPU                  | 1.5 GHz quad-core Cortex-A72 (64-bit mode) |
+| CPU                  | 1.5 GHz quad-core Cortex-A72 (32-bit mode) |
 | Memory               | 1 GB, 2 GB, 4 GB DRAM           |
 | Storage              | MicroSD                         |
 | Linux kernel         | 5.4 w/ Raspberry Pi patches     |
@@ -30,7 +30,7 @@ This is the base Nerves System configuration for the Raspberry Pi 4 Model B.
 ## Using
 
 The most common way of using this Nerves System is create a project with `mix
-nerves.new` and to export `MIX_TARGET=rpi4`. See the [Getting started
+nerves.new` and to export `MIX_TARGET=rpi4_gst_omx`. See the [Getting started
 guide](https://hexdocs.pm/nerves/getting-started.html#creating-a-new-nerves-app)
 for more information.
 

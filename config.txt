@@ -9,13 +9,10 @@
 # https://github.com/raspberrypi/documentation/blob/master/configuration/device-tree.md
 # https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README
 
-# Enable 64-bit support
-#arm_64bit=1
+start_file=start4x.elf
+fixup_file=fixup4x.dat
 
-# We always use the same names, the real used variant is selected by
-# BR2_PACKAGE_RPI_FIRMWARE_{DEFAULT,X,CD} choice
-start_file=start.elf
-fixup_file=fixup.dat
+kernel=zImage
 
 # Disable the boot rainbow
 disable_splash=1
