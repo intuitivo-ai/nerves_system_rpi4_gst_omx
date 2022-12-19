@@ -53,12 +53,12 @@ defmodule NervesSystemRpi4GSTOMX.MixProject do
       # variables to the crosscompile environment. These are intended for
       # llvm-based tooling that may need more precise processor information.
       env: [
-        {"TARGET_ARCH", "aarch64"},
+        {"TARGET_ARCH", "arm"},
         {"TARGET_CPU", "cortex_a72"},
         {"TARGET_OS", "linux"},
-        {"TARGET_ABI", "gnu"},
+        {"TARGET_ABI", "gnueabihf"},
         {"TARGET_GCC_FLAGS",
-         "-mabi=lp64 -fstack-protector-strong -mcpu=cortex-a72 -fPIE -pie -Wl,-z,now -Wl,-z,relro"}
+         "-mabi=aapcs-linux -mfpu=neon-vfpv4 -marm -fstack-protector-strong -mfloat-abi=hard -mcpu=cortex-a72 -fPIE -pie -Wl,-z,now -Wl,-z,relro"}
       ],
       checksum: package_files()
     ]
